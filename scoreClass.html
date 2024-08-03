@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+
+    <ul>
+        <li> <input type="number" name="mth" id="mth" placeholder="mathematics score"> </li>
+        <li> <input type="number" name="eng" id="eng" placeholder="english score"> </li>
+        <li> <button type="submit"> submit </button> </li>
+    </ul>
+
+    <section></section>
+</body>
+
+
+<script>
+    
+    const inputs = document.querySelectorAll('input')
+    const btn = document.querySelector('button')
+    const sect = document.querySelector('section')
+    const title = document.querySelector('h1')
+
+    const mth = input[0]
+    const eng = input[1]
+
+    const para1 = document.createElement('p')
+    const para2 = document.createElement('p')
+    const person = prompt('what is your name')
+
+    title.textContent = 'welcome' + person
+    console.log(person)
+    function resultStatus(){
+        const m = mth.value - 0
+        const en = eng.value * 1
+        const avg = (m + en) / 2
+
+        const status = m >= 50 && en >= 50 ? ' you are promoted' : m >= 50 || en >= 50 ? `you need reseat ${m >=50 ? 'english' : 'mathematics'}` : 'sorry you have to repeat this class'
+        
+        para1.textContent = avg
+        para2.textContent = person + status
+
+        sect.append(para1,para2)
+
+    }
+
+    btn.addEventListener('click', resultStatus)
+
+</script>
+</html>
