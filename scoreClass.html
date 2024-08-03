@@ -25,14 +25,14 @@
     const sect = document.querySelector('section')
     const title = document.querySelector('h1')
 
-    const mth = input[0]
-    const eng = input[1]
+    const mth = inputs[0]
+    const eng = inputs[1]
 
     const para1 = document.createElement('p')
     const para2 = document.createElement('p')
     const person = prompt('what is your name')
 
-    title.textContent = 'welcome' + person
+    title.textContent = 'welcome ' + person
     console.log(person)
     function resultStatus(){
         const m = mth.value - 0

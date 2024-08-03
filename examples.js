@@ -1,10 +1,11 @@
- 
+//  USE OF JAVA SCRIPT ON THE CONSOLE LOG
  
  let sentence = " i love you"
  console.log(sentence)
 
  
 //  change to uppercase
+
  sentence = sentence.toUpperCase
  console.log(sentence)
 
@@ -12,20 +13,24 @@
 console.log(sentence)
 
 // change to lower case
+
 sentence = sentence.toLowerCase
 console.log(sentence)
 
-// the lenght of string and lenth doesnto take a paren cos aint a functional method
+// the lenght of string and length does not take a paren cos aint a functional method
+
 let strlength = sentence.length
 console.log(strlenght)
 
 // the first character
-let firstchar = sentence[0]
+
+let firstChar = sentence[0]
 console.log(tenthChar)
 
 // the fisrt character
+
 let tenthChar = sentence[9]
-console.log(tebthChar)
+console.log(tenthChar)
 
 // the character at 22
 let char22 =  sentence.charAt(22)
